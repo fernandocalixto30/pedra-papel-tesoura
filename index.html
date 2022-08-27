@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" rel="stylesheet">
+    <title>pdra,papel,tesoura!</title>
+
+
+</head>
+
+
+
+<body>
+
+    <h1><img src="imgs/logo.png"></h1>
+
+                        <!--Icones do Jogador-->
+    <div id="jokenpo">
+        <div id="jogador1">
+            <h2 id="nome-jogador">Jogador</h2> 
+            <span id="pontosJogador">0</span>
+            <ul id="opçoes">
+                <li>
+                    <a id="pedra" onclick="jogar(1)">
+                    <img src="imgs/pedra-apagada.png"
+             height="100" width="100" onclick="PedraAcesa()" id="img-rock"></a>
+                </li>
+                <li>
+                    <a id="papel" onclick="jogar(2)">
+                    <img src="imgs/papel-apagado.png"  onclick="PapelAceso()" id="img-paper" height="100" width="100" ></a>
+                </li>
+                <li>
+                    <a id="tesoura" onclick="jogar(3)">
+                    <img src="imgs/tesoura-apagada.png" onclick="TesouraAcesa()" height="100" width="100" id="img-sisor"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="versus">VS</div>
+        <div id="CPU">
+            <h2 id="nome-computador">Computador</h2> 
+            <span id="pontosCPU">0</span>
+            <ul id="opçoes-com">
+                <li>
+                    <a id="tesoura-com">
+                    <img src="imgs/tesoura-apagada.png" height="100" width="100" id="tesourapc"></a>
+                </li>
+                <li>
+                    <a id="papel-com">
+                    <img src="imgs/papel-apagado.png" height="100" width="100" id="papelpc"></a>
+                </li>
+                <li>
+                    <a id="pedra-com">
+                    <img src="imgs/pedra-apagada.png" height="100" width="100" id="pedrapc"></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    
+    <div id="mensagens">&nbsp;</div>
+
+    <footer>
+        Created by <a href="https://github.com/fernandocalixto30">github</a><br>
+        Todos os direitos reservados.&copy; 2022
+    </footer>
+        
+
+<script src="jogo.js"> </script>
+
+</body>
+</html>
